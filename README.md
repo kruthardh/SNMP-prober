@@ -1,4 +1,7 @@
 # SNMP-prober
+
+19-11-2019
+
 A script to probe an SNMP agent and find the rate of change for several counters between successive probes or samples. The rate calculated for each counter/OID is displayed on the console, a line is dedicated for each calculated rate, the output format is described in detail in 'output format'. This script can handle both 32 and 64 bit versions of counters and in the case that a counter wraps (ie goes from a high number to a low number) this solution addresses and rectifes it. The solution also handles an SNMP agent restart (i.e. the sysUpTime OID becomes less than it was before, ie. it starts counting from zero), and timeouts, i.e. the device does not respond to your request in time.  
 
 The script in invoked as follows:
